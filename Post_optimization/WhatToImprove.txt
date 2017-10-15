@@ -1,0 +1,4 @@
+[X] Quicksort
+[X] Switch order of sorting and (min, max, avg)
+[ ] Buffer size
+[X] G++ optimizatinos level 3

@@ -45,6 +45,8 @@ int main(int argc, char* argv[]){
 
 			fkThis(i, j);
 			sleep(1);
+			returnValue = system("rm gmon.out");
+			sleep(1);
 
 		}
 	}
@@ -56,186 +58,186 @@ void fkThis(int i, int j){
 	int returnValue;
 	if(i == 0){
 		if(j == 0){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS4");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS4");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS4.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS4.txt");
 		}
 		else if(j == 1){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS8");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS8");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS8.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS8.txt");
 		}
 		else if(j == 2){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS16");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS16");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS16.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS16.txt");
 		}
 		else if(j == 3){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS32");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS32");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS32.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS32.txt");
 		}
 		else if(j == 4){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS64");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS64");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS64.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS64.txt");
 		}
 		else if(j == 5){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS128");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS128");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS128.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS128.txt");
 		}
 		else if(j == 6){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS256");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS256");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS256.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS256.txt");
 		}
 		else if(j == 7){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS512");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS512");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS512.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS512.txt");
 		}
 		else if(j == 8){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS1024");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS1024");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS1024.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS1024.txt");
 		}
 		else if(j == 9){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS2048");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS2048");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS2048.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS2048.txt");
 		}
 		else if(j == 10){
-			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS4096");
-			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS4096");
+			returnValue = system("gprof -p main gmon.out > tests/N1/flatprofileBS4096.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1/callgraphBS4096.txt");
 		}
 	}
 	else if(i == 1){
 		if(j == 0){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS4");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS4");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS4.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS4.txt");
 		}
 		else if(j == 1){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS8");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS8");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS8.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS8.txt");
 		}
 		else if(j == 2){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS16");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS16");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS16.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS16.txt");
 		}
 		else if(j == 3){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS32");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS32");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS32.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS32.txt");
 		}
 		else if(j == 4){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS64");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS64");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS64.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS64.txt");
 		}
 		else if(j == 5){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS128");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS128");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS128.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS128.txt");
 		}
 		else if(j == 6){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS256");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS256");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS256.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS256.txt");
 		}
 		else if(j == 7){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS512");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS512");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS512.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS512.txt");
 		}
 		else if(j == 8){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS1024");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS1024");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS1024.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS1024.txt");
 		}
 		else if(j == 9){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS2048");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS2048");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS2048.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS2048.txt");
 		}
 		else if(j == 10){
-			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS4096");
-			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS4096");
+			returnValue = system("gprof -p main gmon.out > tests/N10/flatprofileBS4096.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N10/callgraphBS4096.txt");
 		}
 	}
 	else if(i == 2){
 		if(j == 0){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS4");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS4");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS4.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS4.txt");
 		}
 		else if(j == 1){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS8");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS8");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS8.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS8.txt");
 		}
 		else if(j == 2){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS16");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS16");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS16.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS16.txt");
 		}
 		else if(j == 3){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS32");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS32");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS32.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS32.txt");
 		}
 		else if(j == 4){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS64");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS64");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS64.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS64.txt");
 		}
 		else if(j == 5){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS128");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS128");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS128.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS128.txt");
 		}
 		else if(j == 6){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS256");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS256");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS256.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS256.txt");
 		}
 		else if(j == 7){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS512");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS512");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS512.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS512.txt");
 		}
 		else if(j == 8){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS1024");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS1024");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS1024.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS1024.txt");
 		}
 		else if(j == 9){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS2048");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS2048");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS2048.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS2048.txt");
 		}
 		else if(j == 10){
-			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS4096");
-			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS4096");
+			returnValue = system("gprof -p main gmon.out > tests/N100/flatprofileBS4096.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N100/callgraphBS4096.txt");
 		}
 	}
 	else if(i == 3){
 		if(j == 0){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS4");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS4");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS4.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS4.txt");
 		}
 		else if(j == 1){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS8");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS8");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS8.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS8.txt");
 		}
 		else if(j == 2){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS16");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS16");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS16.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS16.txt");
 		}
 		else if(j == 3){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS32");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS32");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS32.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS32.txt");
 		}
 		else if(j == 4){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS64");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS64");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS64.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS64.txt");
 		}
 		else if(j == 5){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS128");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS128");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS128.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS128.txt");
 		}
 		else if(j == 6){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS256");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS256");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS256.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS256.txt");
 		}
 		else if(j == 7){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS512");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS512");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS512.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS512.txt");
 		}
 		else if(j == 8){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS1024");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS1024");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS1024.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS1024.txt");
 		}
 		else if(j == 9){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS2048");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS2048");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS2048.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS2048.txt");
 		}
 		else if(j == 10){
-			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS4096");
-			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS4096");
+			returnValue = system("gprof -p main gmon.out > tests/N1000/flatprofileBS4096.txt");
+			returnValue = system("gprof -q main gmon.out > tests/N1000/callgraphBS4096.txt");
 		}
 	}
 	else{

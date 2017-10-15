@@ -286,3 +286,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+Pre_optimization/values
+Post_optimization/values
+
+Pre_optimization/output
+Post_optimization/output
