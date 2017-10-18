@@ -36,7 +36,6 @@ int main(int argc, char* argv[])
 
 	// load the dateset in the memory area addressed by ds 
 	float* ds = loadDataset(dataSetSize, inputFileName, bufferSize);
-	//printDataSet(ds, dataSetSize);
 
 	//sort the dataset and copy it into the memory area pointed by sds 
 	quickSort(ds, dataSetSize);
